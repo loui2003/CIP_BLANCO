@@ -19,4 +19,4 @@ if cpfcnpj != '':
     tabela_filtrada = df[df['cpf'] == cpfcnpj]
     st.dataframe(tabela_filtrada,use_container_width=True,hide_index=True)
 else:
-    st.dataframe(df,use_container_width=True,hide_index=True)
+    st.info('Você deve procurar um CPF ou CNPJ')
